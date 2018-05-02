@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "entry": "./lib/webparts/webPart1/WebPart1WebPart.js",
+      "manifest": "./src/webparts/webPart1/WebPart1WebPart.manifest.json",
+      "outputPath": "./dist/web-part-1-web-part.js"
+    }
+  ],
+  "externals": {},
+  "localizedResources": {
+    "WebPart1WebPartStrings": "webparts/webPart1/loc/{locale}.js"
+  }
+}

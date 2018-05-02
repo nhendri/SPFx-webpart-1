@@ -1,0 +1,42 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "07baf1e2-f320-4a19-8958-17060a750a9c",
+  "alias": "WebPart1WebPart",
+  "componentType": "WebPart",
+  // The "*" signifies that the version should be taken from the package.json
+  "version": "*",
+  "manifestVersion": 2,
+  // If true, the component can only be installed on sites where Custom Script is allowed.
+  // Components that allow authors to embed arbitrary script code should set this to true.
+  // https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f
+  "requiresCustomScript": false,
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
+      "group": {
+        "default": "Other"
+      },
+      "title": {
+        "default": "img-and-link"
+      },
+      "description": {
+        "default": "A simple web part that displays 1-2 lines of splash text and 2-4 lines of supporting text, a supporting image, and is clickable to a user-configured link."
+      },
+      "officeFabricIconFontName": "Picture",
+      "properties": {
+        "name": "",
+        "description": "",
+        "contributorAccess": false,
+        "content": {
+          "mainText": "",
+          "supportinText": "",
+          "img": {
+            "imgUrl": "https://",
+            "imgAltText": ""
+          },
+          "linkUrl": "https://"
+        }
+      }
+    }
+  ]
+}
