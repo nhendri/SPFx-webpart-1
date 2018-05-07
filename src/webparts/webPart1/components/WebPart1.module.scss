@@ -1,4 +1,10 @@
 @import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+@mixin sizeWP() {
+    //max-width: 639px;
+    width: 100%;
+    height: auto;
+}
+
 .webPart1 {
     @include ms-Grid;
 }
@@ -9,7 +15,23 @@
 
 .link {
     @include ms-fontColor-themePrimary;
-    text-decoration: none;
+    text-decoration: none; //position: relative;
+}
+
+.imgBackground {
+    position: absolute;
+    @include sizeWP();
+}
+
+.textContainerOuter {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    @include sizeWP();
+}
+
+.textContainerInner {
+    margin: 10%;
+    padding: 5%;
 }
 
 /* .webPart1 {

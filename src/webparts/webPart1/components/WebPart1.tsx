@@ -18,10 +18,17 @@ any > {
       <div className={styles.webPart1}>
         <div className={styles.row}>
           <a className={styles.link} href={this.props.content.linkUrl} target='blank'>
-            <h1>{this.props.content.mainText}</h1>
-            {this.props.content.supportingText
-              ? <p>{this.props.content.supportingText}</p>
+            {this.props.content.img.imgUrl != 'https://'
+              ? <img className={styles.imgBackground} src={this.props.content.img.imgUrl}/>
               : null}
+            <div className={styles.textContainerOuter}>
+              <div className={styles.textContainerInner}>
+                <h1>{this.props.content.mainText}</h1>
+                {this.props.content.supportingText
+                  ? <p>{this.props.content.supportingText}</p>
+                  : null}
+              </div>
+            </div>
           </a>
         </div>
       </div>
